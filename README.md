@@ -21,8 +21,8 @@ Yêu cầu
      
 ![image](https://github.com/nguyenmanhcuong1291/gas-danh_gia_ky/assets/165188955/7a17f0a5-cb40-47db-bc38-efe52d7de334)
 - Nhân viên:
--   Điền nội dung đánh giá
--   Chạy scripts:
--     Chuyển quyền sở hữu về cho quản lý
--     Chuyển quyền edit thành view
--     Tạo 1 ss clone 
+  - Điền nội dung đánh giá
+  - Chạy scripts:
+    - Chuyển quyền sở hữu về cho quản lý
+    - Chuyển quyền edit thành view
+    - Tạo 1 ss clone 
