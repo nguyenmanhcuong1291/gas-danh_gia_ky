@@ -1,2 +1,3 @@
 # gas-danh_gia_ky
-Tự động tạo clone spreadsheets và send mail cho nhân viên, nộp form và chuyển quyền sở hữu spreadsheets 
+Quản lý tự động tạo clone template spreadsheets và send mail cho nhân viên
+Nhân viên nộp form và chuyển quyền sở hữu spreadsheets cho quản lý 
