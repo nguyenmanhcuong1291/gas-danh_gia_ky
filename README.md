@@ -1,4 +1,5 @@
 # gas-danh_gia_ky
+Code
 - Quản lý: tự động tạo clone template spreadsheets và send mail cho nhân viên
   - code ở quan_ly_branch
 - Nhân viên: nộp form và chuyển quyền sở hữu spreadsheets cho quản lý
