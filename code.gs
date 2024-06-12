@@ -25,17 +25,30 @@ function showLoadingDialog() {
 }
 //tạo file copy
 function copyFileAndUpdatePermissions() {
-  var originalFile = DriveApp.getFileById(SSID);
-  var copiedFile = originalFile.makeCopy();
+  var originalFile = SpreadsheetApp.openById(SSID);
+  var sourceSheets = originalFile.getSheets();
+  var copiedFile = SpreadsheetApp.create("Copy of " + SS.getName());
   var copiedFileId = copiedFile.getId();
   var copiedFileUrl = "https://docs.google.com/spreadsheets/d/" + copiedFileId;
 
-  // console.log(copiedFileUrl)
+  // Sao chép từng sheet từ file gốc sang file mới
+  for (var i = 0; i < sourceSheets.length; i++) {
+    var sheet = sourceSheets[i];
+    sheet.copyTo(copiedFile).setName(sheet.getName());
+  }
+
+  // Xóa sheet mặc định trong file mới
+  var newSheets = copiedFile.getSheets();
+  copiedFile.deleteSheet(newSheets[0]);
+
+  console.log(sourceSheets)
+  console.log(copiedFileUrl)
 
   
   showSuccessDialog(copiedFileUrl);
   updateAllPermissionsToReader();
 }
+
 
 //update tk edit thành view
 function updateAllPermissionsToReader() {
